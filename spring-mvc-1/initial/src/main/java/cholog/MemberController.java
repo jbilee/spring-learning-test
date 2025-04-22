@@ -16,6 +16,13 @@ public class MemberController {
         return "hi";
     }
 
+    // 대신 경로를 String 매개변수로 리턴하는 건 됨
+    // localhost:8080/a2 로 이동하면 hi.html가 뜸
+    @GetMapping("/a2")
+    public String pageA2() {
+        return "hi.html";
+    }
+
     // 응답 값으로 페이지에 띄울 text/html Content-Type을 반환하는 메서드
     // @ResponseBody annotation으로 인해 text/html Content-Type인 것으로 인지됨
     // HTML syntax 사용 가능
