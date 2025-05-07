@@ -16,8 +16,8 @@ public class MemberController {
         return "hi";
     }
 
-    // 대신 경로를 String 매개변수로 리턴하는 건 됨
-    // localhost:8080/a2 로 이동하면 hi.html가 뜸
+    // 대신 경로를 String 매개변수로 리턴하는 건 됨--근데 조건은 Thymeleaf 쓰고 있지 않아야 함!
+    // localhost:8080/a2 로 이동하면 hi.html가 뜸 (Thymeleaf 의존성 없을 때만)
     @GetMapping("/a2")
     public String pageA2() {
         return "hi.html";
